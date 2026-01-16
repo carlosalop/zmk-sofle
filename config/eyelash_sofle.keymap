@@ -35,6 +35,15 @@
         tap-ms = <100>;
     };
 
+    tap_dance_f12: tap_dance_f12 {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TAP_DANCE_F12";
+        #binding-cells = <0>;
+        bindings = <&kp F12>, <&kp LS(LA(F12))>;
+
+        tapping-term-ms = <160>;
+    };
+
     behaviors {
     };
 
@@ -69,11 +78,11 @@
 
         layer0 {
             bindings = <
-&kp ESC           &none  &kp LS(LG(LA(LC(D))))  &none         &none  &none                     &kp UP_ARROW     &none      &kp LC(F2)  &kp LS(LA(LC(LG(Z))))  &kp LS(LG(A))  &none      &none
-&sk LS(LEFT_GUI)  &kp Q  &kp W                  &kp E         &kp R  &kp T                     &kp DOWN_ARROW   &kp Y      &kp U       &kp I                  &kp O          &kp P      &sk RS(RIGHT_GUI)
-&sk LEFT_SHIFT    &kp A  &kp S                  &kp D         &kp F  &kp G                     &kp LEFT_ARROW   &kp H      &kp J       &kp K                  &kp L          &kp ENTER  &sk RSHIFT
-&sk RIGHT_ALT     &kp Z  &kp X                  &kp C         &kp V  &kp B                     &kp RIGHT_ARROW  &kp N      &kp M       &kp COMMA              &kp DOT        &kp FSLH   &none
-&kp C_MUTE        &none  &sk LCTRL              &kp LEFT_ALT  &mo 2  &mt LEFT_GUI BACKSPACE    &kp ENTER        &kp SPACE  &mo 1       &mt RCTRL TAB          &sk RCTRL      &none
+&kp ESC           &none  &kp LS(LG(LA(LC(D))))  &none         &none  &kp LS(LA(LC(LG(I))))     &kp UP_ARROW     &tap_dance_f12  &kp LA(F11)  &kp LS(LA(LC(LG(Z))))  &kp LS(LG(A))  &none      &none
+&sk LS(LEFT_GUI)  &kp Q  &kp W                  &kp E         &kp R  &kp T                     &kp DOWN_ARROW   &kp Y           &kp U        &kp I                  &kp O          &kp P      &sk RS(RIGHT_GUI)
+&sk LEFT_SHIFT    &kp A  &kp S                  &kp D         &kp F  &kp G                     &kp LEFT_ARROW   &kp H           &kp J        &kp K                  &kp L          &kp ENTER  &sk RSHIFT
+&sk RIGHT_ALT     &kp Z  &kp X                  &kp C         &kp V  &kp B                     &kp RIGHT_ARROW  &kp N           &kp M        &kp COMMA              &kp DOT        &kp FSLH   &none
+&kp C_MUTE        &none  &sk LCTRL              &kp LEFT_ALT  &mo 2  &mt LEFT_GUI BACKSPACE    &kp ENTER        &kp SPACE       &mo 1        &mt LEFT_GUI TAB       &sk RCTRL      &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -95,11 +104,11 @@
 
         layer_2 {
             bindings = <
-&trans  &bt BT_SEL 0           &bt BT_SEL 1           &bt BT_SEL 2           &bt BT_SEL 3           &bt BT_SEL 4             &mmv MOVE_UP     &kp LG(Q)  &none      &none         &none      &none    &none
-&none   &kp LS(LA(LC(LG(C))))  &kp LG(LS(LC(LA(F))))  &kp LS(LA(LC(LG(V))))  &kp LS(LA(LC(LG(S))))  &kp LS(LA(LC(LG(G))))    &mmv MOVE_DOWN   &none      &kp PG_UP  &kp UP        &kp DEL    &none    &none
-&none   &kp LG(LEFT_GUI)       &kp LEFT_SHIFT         &kp LEFT_ALT           &kp LCTRL              &mo 5                    &mmv MOVE_LEFT   &kp HOME   &kp LEFT   &kp DOWN      &kp RIGHT  &kp END  &none
-&none   &kp LG(Z)              &kp LG(X)              &kp LG(C)              &kp LG(V)              &kp LG(GRAVE)            &mmv MOVE_RIGHT  &none      &kp PG_DN  &kp LA(BSPC)  &kp ESC    &none    &none
-&none   &none                  &trans                 &trans                 &trans                 &trans                   &mkp LCLK        &sl 4      &mo 3      &trans        &trans     &none
+&trans  &bt BT_SEL 0           &bt BT_SEL 1           &bt BT_SEL 2           &bt BT_SEL 3           &bt BT_SEL 4             &mmv MOVE_UP     &kp LG(Q)                 &none      &none         &none      &none    &none
+&mo 5   &kp LS(LA(LC(LG(C))))  &kp LG(LS(LC(LA(F))))  &kp LS(LA(LC(LG(V))))  &kp LS(LA(LC(LG(S))))  &kp LS(LA(LC(LG(G))))    &mmv MOVE_DOWN   &kp LC(LG(LS(NUMBER_4)))  &kp PG_UP  &kp UP        &kp DEL    &none    &none
+&none   &kp LG(LEFT_GUI)       &kp LEFT_SHIFT         &kp LEFT_ALT           &kp LCTRL              &mo 5                    &mmv MOVE_LEFT   &kp HOME                  &kp LEFT   &kp DOWN      &kp RIGHT  &kp END  &none
+&none   &kp LG(Z)              &kp LG(X)              &kp LG(C)              &kp LG(V)              &kp LG(GRAVE)            &mmv MOVE_RIGHT  &none                     &kp PG_DN  &kp LA(BSPC)  &kp ESC    &none    &none
+&none   &none                  &trans                 &trans                 &trans                 &trans                   &mkp LCLK        &sl 4                     &mo 3      &trans        &trans     &none
             >;
 
             display-name = "layer2";
