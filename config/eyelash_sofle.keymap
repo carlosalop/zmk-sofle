@@ -6,9 +6,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/rgb.h>
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
@@ -71,24 +69,24 @@
 
         layer0 {
             bindings = <
-&kp ESC         &kp N1     &kp N2        &kp N3        &kp N4  &kp N5             &kp UP_ARROW     &kp N6     &kp N7  &kp N8           &kp N9         &kp N0      &kp BACKSPACE
-&sk LS(LCTRL)   &kp Q      &kp W         &kp E         &kp R   &kp T              &kp DOWN_ARROW   &kp Y      &kp U   &kp I            &kp O          &kp P       &sk RS(RCTRL)
-&sk LEFT_SHIFT  &kp A      &kp S         &kp D         &kp F   &kp G              &kp LEFT_ARROW   &kp H      &kp J   &kp K            &kp L          &kp ENTER   &sk RSHIFT
-&sk RIGHT_ALT   &kp Z      &kp X         &kp C         &kp V   &kp B              &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA        &kp DOT        &kp FSLH    &kp ENTER
-&kp C_MUTE      &kp LCTRL  &sk LEFT_GUI  &kp LEFT_ALT  &mo 2   &mt LCTRL SPACE    &kp ENTER        &kp SPACE  &mo 1   &mt RCTRL SPACE  &sk RIGHT_GUI  &kp DELETE
+&kp ESC           &none  &kp LS(LG(LA(LC(D))))  &none         &none  &none                     &kp UP_ARROW     &none      &kp LC(F2)  &kp LS(LA(LC(LG(Z))))  &kp LS(LG(A))  &none      &none
+&sk LS(LEFT_GUI)  &kp Q  &kp W                  &kp E         &kp R  &kp T                     &kp DOWN_ARROW   &kp Y      &kp U       &kp I                  &kp O          &kp P      &sk RS(RIGHT_GUI)
+&sk LEFT_SHIFT    &kp A  &kp S                  &kp D         &kp F  &kp G                     &kp LEFT_ARROW   &kp H      &kp J       &kp K                  &kp L          &kp ENTER  &sk RSHIFT
+&sk RIGHT_ALT     &kp Z  &kp X                  &kp C         &kp V  &kp B                     &kp RIGHT_ARROW  &kp N      &kp M       &kp COMMA              &kp DOT        &kp FSLH   &none
+&kp C_MUTE        &none  &sk LCTRL              &kp LEFT_ALT  &mo 2  &mt LEFT_GUI BACKSPACE    &kp ENTER        &kp SPACE  &mo 1       &mt RCTRL TAB          &sk RCTRL      &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = "LAYER0";
+            display-name = "layer0";
         };
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+&trans      &none          &none          &none         &none         &none            &mmv MOVE_UP     &none         &none          &none       &none         &none          &none
+&none       &kp LS(EXCL)   &kp LS(AT)     &kp LS(LBRC)  &kp LS(RBRC)  &kp LS(PIPE)     &mmv MOVE_DOWN   &none         &caps_word     &kp SEMI    &kp LS(STAR)  &kp BSLH       &kp EQUAL
+&none       &kp LS(POUND)  &kp LS(DLLR)   &kp LS(LPAR)  &kp LS(RPAR)  &kp GRAVE        &mmv MOVE_LEFT   &kp MINUS     &kp LS(UNDER)  &kp EQUAL   &kp LS(PLUS)  &kp SQT        &kp LS(DQT)
+&none       &kp LS(PRCNT)  &kp LS(CARET)  &kp LBKT      &kp RBKT      &kp LS(TILDE)    &mmv MOVE_RIGHT  &kp LS(AMPS)  &kp LS(COLON)  &kp LS(LT)  &kp LS(GT)    &kp LS(QMARK)  &kp RIGHT_SHIFT
+&kp C_MUTE  &none          &trans         &trans        &mo 3         &trans           &mkp LCLK        &trans        &trans         &trans      &trans        &none
             >;
 
             display-name = "layer1";
@@ -97,11 +95,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
+&trans  &bt BT_SEL 0           &bt BT_SEL 1           &bt BT_SEL 2           &bt BT_SEL 3           &bt BT_SEL 4             &mmv MOVE_UP     &kp LG(Q)  &none      &none         &none      &none    &none
+&none   &kp LS(LA(LC(LG(C))))  &kp LG(LS(LC(LA(F))))  &kp LS(LA(LC(LG(V))))  &kp LS(LA(LC(LG(S))))  &kp LS(LA(LC(LG(G))))    &mmv MOVE_DOWN   &none      &kp PG_UP  &kp UP        &kp DEL    &none    &none
+&none   &kp LG(LEFT_GUI)       &kp LEFT_SHIFT         &kp LEFT_ALT           &kp LCTRL              &mo 5                    &mmv MOVE_LEFT   &kp HOME   &kp LEFT   &kp DOWN      &kp RIGHT  &kp END  &none
+&none   &kp LG(Z)              &kp LG(X)              &kp LG(C)              &kp LG(V)              &kp LG(GRAVE)            &mmv MOVE_RIGHT  &none      &kp PG_DN  &kp LA(BSPC)  &kp ESC    &none    &none
+&none   &none                  &trans                 &trans                 &trans                 &trans                   &mkp LCLK        &sl 4      &mo 3      &trans        &trans     &none
             >;
 
             display-name = "layer2";
@@ -110,11 +108,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3   &none                &none  &none   &none   &none   &none   &none    &none
+&none   &none         &none             &none         &none          &none                &none  &none   &kp N7  &kp N8  &kp N9  &none    &none
+&none   &kp LEFT_GUI  &kp LSHIFT        &kp LEFT_ALT  &kp LCTRL      &kp K_VOLUME_UP      &none  &none   &kp N4  &kp N5  &kp N6  &kp DOT  &none
+&none   &kp K_MUTE    &kp K_PLAY_PAUSE  &kp K_BACK    &kp K_FORWARD  &kp K_VOLUME_DOWN    &none  &none   &kp N1  &kp N2  &kp N3  &none    &none
+&none   &none         &trans            &trans        &trans         &trans               &none  &trans  &trans  &kp N0  &kp N0  &kp DOT
             >;
 
             display-name = "layer3";
@@ -123,11 +121,11 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &none                  &none                  &none                  &none                  &none                    &none  &none                  &none                  &none                  &none                  &none                  &none
+&none   &kp LS(LA(LC(LG(Q))))  &kp LS(LA(LC(LG(W))))  &kp LS(LA(LC(LG(E))))  &kp LS(LA(LC(LG(R))))  &kp LS(LA(LC(LG(T))))    &none  &none                  &kp LS(LA(LC(LG(U))))  &kp LS(LA(LC(LG(I))))  &kp LS(LA(LC(LG(O))))  &kp LS(LA(LC(LG(P))))  &none
+&none   &kp LS(LA(LC(LG(A))))  &kp LS(LA(LC(LG(S))))  &kp LS(LA(LC(LG(D))))  &kp LS(LA(LC(LG(F))))  &kp LS(LA(LC(LG(G))))    &none  &none                  &none                  &none                  &none                  &none                  &none
+&none   &kp LS(LA(LC(LG(Z))))  &kp LS(LA(LC(LG(X))))  &kp LS(LA(LC(LG(C))))  &kp LS(LA(LC(LG(V))))  &kp LS(LA(LC(LG(B))))    &none  &kp LS(LA(LC(LG(N))))  &none                  &none                  &none                  &none                  &none
+&none   &none                  &trans                 &trans                 &trans                 &trans                   &none  &trans                 &trans                 &trans                 &trans                 &none
             >;
 
             display-name = "layer4";
@@ -136,11 +134,11 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
             >;
         };
     };
