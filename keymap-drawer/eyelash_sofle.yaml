@@ -8,8 +8,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Hyper+I
   - $$mdi:arrow-up-bold$$
-  - '&tap_dance_f12'
   - Alt+F11
+  - '&tap_dance_f12'
   - Hyper+Z
   - Sft+Gui+A
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -394,12 +394,12 @@ layers:
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Gui+I
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - F9
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F9
   - $$mdi:arrow-up-bold$$
-  - '&tap_dance_f12'
   - Alt+F11
+  - '&tap_dance_f12'
   - Gui+I
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
