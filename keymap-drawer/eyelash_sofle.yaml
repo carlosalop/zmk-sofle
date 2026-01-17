@@ -4,7 +4,7 @@ layers:
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Hyper+D
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Hyper+I
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Hyper+I
   - $$mdi:arrow-up-bold$$
