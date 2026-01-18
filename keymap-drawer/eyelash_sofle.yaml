@@ -6,7 +6,7 @@ layers:
   - Hyper+D
   - Hyper+I
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Hyper+I
+  - '&soft_off'
   - $$mdi:arrow-up-bold$$
   - Alt+F11
   - '&tap_dance_f12'
@@ -208,7 +208,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&soft_off'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -396,7 +396,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F9
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - F9
+  - '&soft_off'
   - $$mdi:arrow-up-bold$$
   - Alt+F11
   - '&tap_dance_f12'
@@ -598,7 +598,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&soft_off'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
