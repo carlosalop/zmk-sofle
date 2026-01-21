@@ -47,9 +47,9 @@
     behaviors {
         my_lt: my_layer_tap {
             compatible = "zmk,behavior-hold-tap";
-            tapping-term-ms = <130>;
-            quick-tap-ms = <120>;
-            flavor = "balanced";
+            tapping-term-ms = <150>;
+            quick-tap-ms = <140>;
+            flavor = "hold-preferred";
             #binding-cells = <2>;
             bindings = <&mo>, <&kp>;
 
