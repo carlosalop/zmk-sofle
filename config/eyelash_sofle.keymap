@@ -24,11 +24,6 @@
     trigger-period-ms = <16>;
 };
 
-&my_lt {
-    tapping-term-ms = <160>;
-    quick-tap-ms = <150>;
-    flavor = "balanced";
-};
 
 &soft_off { hold-time-ms = <2000>; };
 
@@ -51,6 +46,12 @@
     };
 
     behaviors {
+        my_lt: my_layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            tapping-term-ms = <160>;
+            quick-tap-ms = <150>;
+            flavor = "balanced";
+        };
     };
 
     combos {
