@@ -52,6 +52,7 @@
             flavor = "hold-preferred";
             #binding-cells = <2>;
             bindings = <&mo>, <&kp>;
+            require-prior-idle-ms = <140>;
 
             display-name = "My Layer-Tap";
         };
