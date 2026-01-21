@@ -52,7 +52,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:volume-off$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
@@ -208,7 +208,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&studio_unlock'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -234,7 +234,7 @@ layers:
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
   - {t: ., s: '>'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&bl BL_TOG'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - MUTE
   - PLAY PAUSE
@@ -247,7 +247,7 @@ layers:
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - BACKLIGHT TOGGLE
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
