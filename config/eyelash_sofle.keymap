@@ -51,6 +51,9 @@
             tapping-term-ms = <160>;
             quick-tap-ms = <150>;
             flavor = "balanced";
+            #binding-cells = <2>;
+            bindings = <&mo>, <&kp>;
+            display-name = "My Layer-Tap";
         };
     };
 
