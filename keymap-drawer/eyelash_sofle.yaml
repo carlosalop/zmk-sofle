@@ -234,7 +234,7 @@ layers:
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
   - {t: ., s: '>'}
-  - '&bl BL_TOG'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - MUTE
   - PLAY PAUSE
@@ -247,7 +247,7 @@ layers:
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - BACKLIGHT TOGGLE
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -624,7 +624,7 @@ layers:
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
   - {t: ., s: '>'}
-  - '&bl BL_TOG'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-off$$
   - PLAY PAUSE
@@ -637,7 +637,7 @@ layers:
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - BACKLIGHT TOGGLE
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
