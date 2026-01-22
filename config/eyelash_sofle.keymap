@@ -52,8 +52,8 @@
             flavor = "hold-preferred";
             #binding-cells = <2>;
             bindings = <&mo>, <&kp>;
-            require-prior-idle-ms = <140>;
 
+            require-prior-idle-ms = <140>;
             display-name = "My Layer-Tap";
         };
 
@@ -136,7 +136,7 @@
             bindings = <
 &kp ESC           &none                &kp LS(LG(LA(LC(D))))  &kp LS(LA(LC(LG(I))))  &none               &soft_off                 &kp UP_ARROW     &kp LA(F11)  &tap_dance_f12  &kp LS(LA(LC(LG(Z))))  &kp LS(LG(A))       &none                 &tog 6
 &sk LS(LEFT_GUI)  &kp Q                &kp W                  &kp E                  &kp R               &kp T                     &kp DOWN_ARROW   &kp Y        &kp U           &kp I                  &kp O               &kp P                 &sk RS(RIGHT_GUI)
-&sk LEFT_SHIFT    &hml LEFT_COMMAND A  &hml LEFT_SHIFT S      &hml LEFT_ALT D        &hml LCTRL F        &kp G                     &kp LEFT_ARROW   &kp H        &hmr RCTRL J    &hmr RIGHT_SHIFT K     &hmr RIGHT_SHIFT L  &hmr RIGHT_GUI ENTER  &sk RSHIFT
+&sk LEFT_SHIFT    &hml LEFT_COMMAND A  &hml LEFT_SHIFT S      &hml LEFT_ALT D        &hml LCTRL F        &kp G                     &kp LEFT_ARROW   &kp H        &hmr RCTRL J    &hmr LEFT_ALT K        &hmr RIGHT_SHIFT L  &hmr RIGHT_GUI ENTER  &sk RSHIFT
 &sk RIGHT_ALT     &kp Z                &kp X                  &kp C                  &kp V               &kp B                     &kp RIGHT_ARROW  &kp N        &kp M           &kp COMMA              &kp DOT             &kp FSLH              &sk RIGHT_ALT
 &kp C_MUTE        &none                &sk LCTRL              &kp LEFT_ALT           &my_lt 2 BACKSPACE  &mt LEFT_GUI BACKSPACE    &kp ENTER        &kp SPACE    &my_lt 1 SPACE  &mt LEFT_GUI TAB       &sk RCTRL           &none
             >;
