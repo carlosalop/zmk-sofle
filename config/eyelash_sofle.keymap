@@ -67,7 +67,7 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-on-release;
-            hold-trigger-key-positions = <20 21 22 23 24 25 38 51 50 49 48 47 46 33 34 35 36 37>;
+            hold-trigger-key-positions = <20 21 22 23 24 25 38 51 50 49 48 47 46 33 34 35 36 37 60 59>;
         };
 
         hmr: home_row_mod_right {
