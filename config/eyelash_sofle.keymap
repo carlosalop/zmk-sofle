@@ -80,7 +80,7 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-on-release;
-            hold-trigger-key-positions = <13 14 15 16 17 18 31 44 43 42 41 40 39 26 27 28 29 30>;
+            hold-trigger-key-positions = <13 14 15 16 17 18 31 44 43 42 41 40 39 26 27 28 29 30 56>;
         };
     };
 
