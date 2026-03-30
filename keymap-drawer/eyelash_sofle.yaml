@@ -628,8 +628,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-off$$
   - PLAY PAUSE
-  - AC BACK
-  - AC FORWARD
+  - $$mdi:skip-previous$$
+  - $$mdi:skip-next$$
   - $$mdi:volume-low$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
