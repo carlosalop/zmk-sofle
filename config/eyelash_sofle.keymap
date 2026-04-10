@@ -161,7 +161,7 @@
         mov {
             bindings = <
 &trans  &none                  &none                  &none                  &none                  &none                    &mmv MOVE_UP     &kp LG(Q)                 &none      &none         &none      &none    &none
-&mo 5   &kp LS(LA(LC(LG(C))))  &kp LG(LS(LC(LA(F))))  &kp LS(LA(LC(LG(V))))  &kp LS(LA(LC(LG(S))))  &kp LS(LA(LC(LG(G))))    &mmv MOVE_DOWN   &kp LC(LG(LS(NUMBER_4)))  &kp PG_UP  &kp UP        &kp DEL    &none    &none
+&mo 5   &kp LS(LA(LC(LG(C))))  &kp LG(LS(LC(LA(F))))  &kp LS(LA(LC(LG(V))))  &kp LS(LA(LC(LG(S))))  &kp LS(LA(LC(LG(N))))    &mmv MOVE_DOWN   &kp LC(LG(LS(NUMBER_4)))  &kp PG_UP  &kp UP        &kp DEL    &none    &none
 &none   &kp LG(LEFT_GUI)       &kp LEFT_SHIFT         &kp LEFT_ALT           &kp LCTRL              &mo 5                    &mmv MOVE_LEFT   &kp HOME                  &kp LEFT   &kp DOWN      &kp RIGHT  &kp END  &none
 &none   &kp LG(Z)              &kp LG(X)              &kp LG(C)              &kp LG(V)              &kp LG(GRAVE)            &mmv MOVE_RIGHT  &none                     &kp PG_DN  &kp LA(BSPC)  &kp ESC    &none    &none
 &none   &lm 5 LEFT_GUI         &lm 5 LEFT_SHIFT       &lm 5 LEFT_ALT         &trans                 &trans                   &mkp LCLK        &sl 4                     &mo 3      &trans        &trans     &none
