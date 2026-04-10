@@ -149,7 +149,7 @@ layers:
   - Hyper+F
   - Hyper+V
   - Hyper+S
-  - Hyper+G
+  - Hyper+N
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - Ctl+Gui+Sft+4
   - PG UP
