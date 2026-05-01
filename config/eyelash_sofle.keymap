@@ -134,11 +134,11 @@
 
         base {
             bindings = <
-&kp ESC           &none                &kp LS(LG(LA(LC(D))))  &kp LS(LA(LC(LG(I))))  &kp LC(F2)          &soft_off       &kp UP_ARROW     &kp LA(F11)  &tap_dance_f12  &kp LS(LA(LC(LG(Z))))  &kp LS(LG(A))       &none                 &tog 6
-&sk LS(LEFT_GUI)  &kp Q                &kp W                  &kp E                  &kp R               &kp T           &kp DOWN_ARROW   &kp Y        &kp U           &kp I                  &kp O               &kp P                 &sk RS(RIGHT_GUI)
-&sk LEFT_SHIFT    &hml LEFT_COMMAND A  &hml LEFT_SHIFT S      &hml LEFT_ALT D        &hml LCTRL F        &kp G           &kp LEFT_ARROW   &kp H        &hmr RCTRL J    &hmr LEFT_ALT K        &hmr RIGHT_SHIFT L  &hmr RIGHT_GUI ENTER  &sk RSHIFT
-&sk RIGHT_ALT     &kp Z                &kp X                  &kp C                  &kp V               &kp B           &kp RIGHT_ARROW  &kp N        &kp M           &kp COMMA              &kp DOT             &kp FSLH              &sk RIGHT_ALT
-&kp C_MUTE        &none                &sk LCTRL              &kp LEFT_ALT           &my_lt 2 BACKSPACE  &kp LEFT_GUI    &kp ENTER        &kp ENTER    &my_lt 1 SPACE  &mt LEFT_GUI TAB       &sk RCTRL           &none
+&kp ESC           &none                &kp LS(LG(LA(LC(D))))  &kp LS(LA(LC(LG(I))))  &kp LC(F2)     &soft_off    &kp UP_ARROW     &kp LA(F11)  &tap_dance_f12  &kp LS(LA(LC(LG(Z))))  &kp LS(LG(A))       &none                 &tog 6
+&sk LS(LEFT_GUI)  &kp Q                &kp W                  &kp E                  &kp R          &kp T        &kp DOWN_ARROW   &kp Y        &kp U           &kp I                  &kp O               &kp P                 &sk RS(RIGHT_GUI)
+&sk LEFT_SHIFT    &hml LEFT_COMMAND A  &hml LEFT_SHIFT S      &hml LEFT_ALT D        &hml LCTRL F   &kp G        &kp LEFT_ARROW   &kp H        &hmr RCTRL J    &hmr LEFT_ALT K        &hmr RIGHT_SHIFT L  &hmr RIGHT_GUI ENTER  &sk RSHIFT
+&sk RIGHT_ALT     &kp Z                &kp X                  &kp C                  &kp V          &kp B        &kp RIGHT_ARROW  &kp N        &kp M           &kp COMMA              &kp DOT             &kp FSLH              &sk RIGHT_ALT
+&kp C_MUTE        &none                &sk LCTRL              &kp LEFT_ALT           &kp BACKSPACE  &mo 2        &kp ENTER        &mo 1        &kp SPACE       &mt LEFT_GUI TAB       &sk RCTRL           &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -151,7 +151,7 @@
 &none       &kp LS(EXCL)   &kp LS(AT)     &kp LS(LBRC)  &kp LS(RBRC)  &kp LS(PIPE)     &mmv MOVE_DOWN   &none         &caps_word     &kp SEMI    &kp LS(STAR)  &kp BSLH       &kp EQUAL
 &none       &kp LS(POUND)  &kp LS(DLLR)   &kp LS(LPAR)  &kp LS(RPAR)  &kp GRAVE        &mmv MOVE_LEFT   &kp MINUS     &kp LS(UNDER)  &kp EQUAL   &kp LS(PLUS)  &kp SQT        &kp LS(DQT)
 &none       &kp LS(PRCNT)  &kp LS(CARET)  &kp LBKT      &kp RBKT      &kp LS(TILDE)    &mmv MOVE_RIGHT  &kp LS(AMPS)  &kp LS(COLON)  &kp LS(LT)  &kp LS(GT)    &kp LS(QMARK)  &kp RIGHT_SHIFT
-&kp C_MUTE  &none          &trans         &trans        &mo 3         &trans           &mkp LCLK        &trans        &trans         &trans      &trans        &none
+&kp C_MUTE  &none          &trans         &trans        &trans        &mo 3            &mkp LCLK        &trans        &trans         &trans      &trans        &none
             >;
 
             display-name = "sym";
@@ -164,7 +164,7 @@
 &mo 5   &kp LS(LA(LC(LG(C))))  &kp LG(LS(LC(LA(F))))  &kp LS(LA(LC(LG(V))))  &kp LS(LA(LC(LG(S))))  &kp LS(LA(LC(LG(N))))    &mmv MOVE_DOWN   &kp LC(LG(LS(NUMBER_4)))  &kp PG_UP  &kp UP        &kp DEL    &none    &none
 &none   &kp LG(LEFT_GUI)       &kp LEFT_SHIFT         &kp LEFT_ALT           &kp LCTRL              &mo 5                    &mmv MOVE_LEFT   &kp HOME                  &kp LEFT   &kp DOWN      &kp RIGHT  &kp END  &none
 &none   &kp LG(Z)              &kp LG(X)              &kp LG(C)              &kp LG(V)              &kp LG(GRAVE)            &mmv MOVE_RIGHT  &none                     &kp PG_DN  &kp LA(BSPC)  &kp ESC    &none    &none
-&none   &lm 5 LEFT_GUI         &lm 5 LEFT_SHIFT       &lm 5 LEFT_ALT         &trans                 &trans                   &mkp LCLK        &sl 4                     &mo 3      &trans        &trans     &none
+&none   &lm 5 LEFT_GUI         &lm 5 LEFT_SHIFT       &lm 5 LEFT_ALT         &trans                 &trans                   &mkp LCLK        &mo 3                     &sl 4      &trans        &trans     &none
             >;
 
             display-name = "mov";
@@ -212,11 +212,11 @@
         wbase {
             display-name = "wbase";
             bindings = <
-&kp ESC         &none         &none              &kp F9           &none               &soft_off    &kp UP_ARROW     &kp LA(F11)  &tap_dance_f12    &kp LG(I)        &none               &none                     &tog 6
-&sk LS(LCTRL)   &kp Q         &kp W              &kp E            &kp R               &kp T        &kp DOWN_ARROW   &kp Y        &kp U             &kp I            &kp O               &kp P                     &sk RS(RCTRL)
-&sk LEFT_SHIFT  &hml LCTRL A  &hml LEFT_SHIFT S  &hml LEFT_ALT D  &hml LEFT_GUI F     &kp G        &kp LEFT_ARROW   &kp H        &hmr RIGHT_GUI J  &hmr LEFT_ALT K  &hmr RIGHT_SHIFT L  &hmr RIGHT_CONTROL ENTER  &sk RSHIFT
-&sk RIGHT_ALT   &kp Z         &kp X              &kp C            &kp V               &kp B        &kp RIGHT_ARROW  &kp N        &kp M             &kp COMMA        &kp DOT             &kp FSLH                  &sk RIGHT_ALT
-&kp C_MUTE      &none         &sk LEFT_GUI       &kp LEFT_ALT     &my_lt 8 BACKSPACE  &kp LCTRL    &kp ENTER        &kp ENTER    &my_lt 7 SPACE    &mt RCTRL TAB    &sk RIGHT_GUI       &none
+&kp ESC         &none         &none              &kp F9           &none            &soft_off    &kp UP_ARROW     &kp LA(F11)  &tap_dance_f12    &kp LG(I)        &none               &none                     &tog 6
+&sk LS(LCTRL)   &kp Q         &kp W              &kp E            &kp R            &kp T        &kp DOWN_ARROW   &kp Y        &kp U             &kp I            &kp O               &kp P                     &sk RS(RCTRL)
+&sk LEFT_SHIFT  &hml LCTRL A  &hml LEFT_SHIFT S  &hml LEFT_ALT D  &hml LEFT_GUI F  &kp G        &kp LEFT_ARROW   &kp H        &hmr RIGHT_GUI J  &hmr LEFT_ALT K  &hmr RIGHT_SHIFT L  &hmr RIGHT_CONTROL ENTER  &sk RSHIFT
+&sk RIGHT_ALT   &kp Z         &kp X              &kp C            &kp V            &kp B        &kp RIGHT_ARROW  &kp N        &kp M             &kp COMMA        &kp DOT             &kp FSLH                  &sk RIGHT_ALT
+&kp C_MUTE      &none         &sk LEFT_GUI       &kp LEFT_ALT     &kp BACKSPACE    &mo 8        &kp ENTER        &mo 7        &kp SPACE         &mt RCTRL TAB    &sk RIGHT_GUI       &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -229,7 +229,7 @@
 &none       &kp LS(EXCL)   &kp LS(AT)     &kp LS(LBRC)  &kp LS(RBRC)  &kp LS(PIPE)     &mmv MOVE_DOWN   &none         &caps_word     &kp SEMI    &kp LS(STAR)  &kp BSLH       &kp EQUAL
 &none       &kp LS(POUND)  &kp LS(DLLR)   &kp LS(LPAR)  &kp LS(RPAR)  &kp GRAVE        &mmv MOVE_LEFT   &kp MINUS     &kp LS(UNDER)  &kp EQUAL   &kp LS(PLUS)  &kp SQT        &kp LS(DQT)
 &none       &kp LS(PRCNT)  &kp LS(CARET)  &kp LBKT      &kp RBKT      &kp LS(TILDE)    &mmv MOVE_RIGHT  &kp LS(AMPS)  &kp LS(COLON)  &kp LS(LT)  &kp LS(GT)    &kp LS(QMARK)  &kp RIGHT_SHIFT
-&kp C_MUTE  &none          &trans         &trans        &mo 9         &trans           &mkp LCLK        &trans        &trans         &trans      &trans        &none
+&kp C_MUTE  &none          &trans         &trans        &trans        &mo 9            &mkp LCLK        &trans        &trans         &trans      &trans        &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -242,7 +242,7 @@
 &mo 11  &kp LS(F1)    &kp LS(F2)         &kp LS(F3)       &kp LS(F4)    &kp LS(F5)       &mmv MOVE_DOWN   &kp PRINTSCREEN  &kp PG_UP  &kp UP        &kp DEL    &none    &none
 &none   &kp LCTRL     &kp LEFT_SHIFT     &kp LEFT_ALT     &kp LEFT_GUI  &mo 11           &mmv MOVE_LEFT   &kp HOME         &kp LEFT   &kp DOWN      &kp RIGHT  &kp END  &none
 &none   &kp LC(Z)     &kp LC(X)          &kp LC(C)        &kp LC(V)     &kp LA(GRAVE)    &mmv MOVE_RIGHT  &none            &kp PG_DN  &kp LC(BSPC)  &kp ESC    &none    &none
-&none   &lm 11 LCTRL  &lm 11 LEFT_SHIFT  &lm 11 LEFT_ALT  &trans        &trans           &mkp LCLK        &sl 10           &mo 9      &trans        &trans     &none
+&none   &lm 11 LCTRL  &lm 11 LEFT_SHIFT  &lm 11 LEFT_ALT  &trans        &trans           &mkp LCLK        &mo 9            &sl 10     &trans        &trans     &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
