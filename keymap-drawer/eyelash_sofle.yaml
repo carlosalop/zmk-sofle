@@ -7,7 +7,7 @@ layers:
   - Hyper+I
   - Ctl+F2
   - '&soft_off'
-  - $$mdi:pan-up$$
+  - '&msc MOVE_Y(-5)'
   - Alt+F11
   - '&tap_dance_f12'
   - Hyper+Z
@@ -20,7 +20,7 @@ layers:
   - E
   - R
   - T
-  - $$mdi:pan-down$$
+  - '&msc MOVE_Y(5)'
   - Y
   - U
   - I
@@ -33,7 +33,7 @@ layers:
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F, h: '$$mdi:apple-keyboard-control$$'}
   - G
-  - $$mdi:pan-left$$
+  - '&msc MOVE_X(-5)'
   - H
   - {t: J, h: '$$mdi:apple-keyboard-control$$'}
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
@@ -46,7 +46,7 @@ layers:
   - C
   - V
   - B
-  - $$mdi:pan-right$$
+  - '&msc MOVE_X(5)'
   - N
   - M
   - {t: ',', s: <}
@@ -397,7 +397,7 @@ layers:
   - F9
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&soft_off'
-  - $$mdi:pan-up$$
+  - '&msc MOVE_Y(-5)'
   - Alt+F11
   - '&tap_dance_f12'
   - Gui+I
@@ -410,7 +410,7 @@ layers:
   - E
   - R
   - T
-  - $$mdi:pan-down$$
+  - '&msc MOVE_Y(5)'
   - Y
   - U
   - I
@@ -423,7 +423,7 @@ layers:
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - G
-  - $$mdi:pan-left$$
+  - '&msc MOVE_X(-5)'
   - H
   - {t: J, h: RIGHT GUI}
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
@@ -436,7 +436,7 @@ layers:
   - C
   - V
   - B
-  - $$mdi:pan-right$$
+  - '&msc MOVE_X(5)'
   - N
   - M
   - {t: ',', s: <}
