@@ -7,7 +7,7 @@ layers:
   - Hyper+I
   - Ctl+F2
   - '&soft_off'
-  - '&msc MOVE_Y(10)'
+  - $$mdi:volume-high$$
   - Alt+F11
   - '&tap_dance_f12'
   - Hyper+Z
@@ -20,7 +20,7 @@ layers:
   - E
   - R
   - T
-  - '&msc MOVE_Y(-10)'
+  - $$mdi:volume-low$$
   - Y
   - U
   - I
@@ -33,7 +33,7 @@ layers:
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F, h: '$$mdi:apple-keyboard-control$$'}
   - G
-  - '&msc MOVE_X(-10)'
+  - Ctl+Alt+P
   - H
   - {t: J, h: '$$mdi:apple-keyboard-control$$'}
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
@@ -46,7 +46,7 @@ layers:
   - C
   - V
   - B
-  - '&msc MOVE_X(10)'
+  - Ctl+Alt+N
   - N
   - M
   - {t: ',', s: <}
@@ -59,7 +59,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - mov
-  - $$mdi:mouse-left-click-outline$$
+  - Ctl+Alt+K
   - sym
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-command$$'}
